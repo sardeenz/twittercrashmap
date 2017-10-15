@@ -8,6 +8,8 @@ import { join } from 'path';
 import { readFileSync } from 'fs';
 var http = require('http');
 var Twit = require('twit');
+import { Observable } from 'rxjs/Observable';
+import { Subject } from 'rxjs/Subject';
 
 // Faster server renders w/ Prod mode (dev mode never needed)
 enableProdMode();
@@ -114,6 +116,7 @@ http.get({
         // console.log('parsed full', parsed);
         
         console.log('parsed = ', parsed.candidates[0].location);
-    });
+
+      });
   });
 });

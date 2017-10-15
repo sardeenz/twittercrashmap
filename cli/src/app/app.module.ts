@@ -13,8 +13,8 @@ import { EsriLoaderService } from 'angular2-esri-loader';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     EsriMapComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'my-app'}),
